@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.cleaner {
+  clear: both;
+}
+
+.centriranje {
+  width: 80%;
+  margin: 0px auto;
+}
+
+header {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+header #logo {
+  float: left;
+  margin-top: 1%;
+}
+header nav {
+  float: right;
+  margin-top: 2%;
+}
+header nav li {
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 25px;
+}
+header nav a {
+  display: block;
+  color: rgb(37, 52, 48);
+}
+
+#bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(29, 36, 34)), url(../img/cover9.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 22% 89%, 22% 89%, 0 70%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 22% 89%, 22% 89%, 0 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bg-image #naslov {
+  width: 83%;
+  font-size: 20px;
+  color: aliceblue;
+}
+#bg-image #naslov .text-color {
+  color: rgb(29, 36, 34);
+}
+#bg-image #naslov h1 {
+  padding-bottom: 2%;
+}
+#bg-image #naslov p {
+  font-size: 25px;
+}
+
+.heading h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  color: rgb(29, 36, 34);
+  justify-content: center;
+  text-align: center;
+}
+.heading hr {
+  border: 1px solid black;
+  width: 30%;
+  margin: 0px auto;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+#about #picture {
+  height: 500px;
+}
+#about #picture img {
+  width: 100%;
+  height: inherit;
+}
+#about #text {
+  width: 45%;
+  margin-left: 10%;
+}
+#about #text p {
+  width: 100%;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#service {
+  margin-top: 50px;
+}
+#service hr {
+  border: 1px solid black;
+  width: 30%;
+  margin: 0px auto;
+}
+#service #container-skills {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+#service #container-skills .box {
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(99, 131, 107, 0.2509803922);
+  padding: 10px;
+}
+#service #container-skills .box .icon {
+  font-size: 50px;
+}
+#service #container-skills .box h3 {
+  font-size: 20px;
+  padding: 5px;
+}
+#service #container-skills .box p {
+  font-size: 18px;
+}
+
+#projects {
+  height: 100%;
+}
+#projects hr {
+  border: 1px solid black;
+  width: 30%;
+  margin: 0px auto;
+}
+#projects #projects-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+#projects #projects-container .project {
+  height: 250px;
+}
+#projects #projects-container .project img {
+  border: 1px solid black;
+  height: 100%;
+}
+
+#contact hr {
+  border: 1px solid black;
+  width: 30%;
+  margin: 0px auto;
+}
+#contact form {
+  width: 50vw;
+  margin: 8vh auto 0vh auto;
+  padding-bottom: 8vh;
+}
+#contact form .form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#contact form .form-row .form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 25px;
+  margin-bottom: 16px;
+}
+#contact form .form-row .form-box input {
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #339989;
+  color: black;
+}
+#contact form .form-row .form-box textarea {
+  font-size: 1rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #339989;
+  color: white;
+  resize: none;
+}
+
+footer {
+  background-color: rgba(99, 131, 107, 0.2509803922);
+}
+footer #futer-information {
+  margin: 0px auto;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

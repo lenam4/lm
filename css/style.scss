@@ -23,6 +23,12 @@
     width:80%;
     margin:0px auto;
 }
+.wrap-flex{
+    flex-wrap: wrap;
+}
+span{
+    color:#339989;
+}
 header{
    z-index:1;
    position: absolute;
@@ -79,7 +85,6 @@ header{
 .heading{
     
 h2{
-    margin-top: 50px;
     font-size:40px;
     color: rgb(29 36 34);
     justify-content: center;
@@ -97,12 +102,9 @@ hr{
     margin-top:50px;
 
     #picture {
-        height:500px;
-        
-        
+        width:30%;
         img{
         width: 100%;
-        height:inherit;
     }
 }
     #text{
@@ -118,7 +120,7 @@ hr{
 }
 }
 #service{
-    margin-top: 50px;
+    margin-top: 100px;
     
     hr{
         @include hr;
@@ -127,7 +129,7 @@ hr{
     padding:0px 20px 20px 20px;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 100px;
     .box{
         width:20%;
         text-align: center;
@@ -148,6 +150,7 @@ hr{
 }
 }
 #projects{
+    margin-top: 100px;
     height:100%;
     hr{
         @include hr;
@@ -155,21 +158,23 @@ hr{
     #projects-container{
         display: flex;
         justify-content: space-around;
-        margin-top: 50px;
+        margin-top: 100px;
     .project{
-        height:250px;
+        width:47%;
         img{
             border: 1px solid black;
-            height:100%;
+            width:100%;
         }
     }
     }
 }
 #contact{
+    margin-top: 100px;
     hr{
         @include hr;
     }
     form{
+        margin-top: 100px;
         width: 50vw;
 		margin: 8vh auto 0vh auto;
 		padding-bottom: 8vh;

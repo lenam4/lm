@@ -16,6 +16,14 @@
   margin: 0px auto;
 }
 
+.wrap-flex {
+  flex-wrap: wrap;
+}
+
+span {
+  color: #339989;
+}
+
 header {
   z-index: 1;
   position: absolute;
@@ -67,7 +75,6 @@ header nav a {
 }
 
 .heading h2 {
-  margin-top: 50px;
   font-size: 40px;
   color: rgb(29, 36, 34);
   justify-content: center;
@@ -87,11 +94,10 @@ header nav a {
   margin-top: 50px;
 }
 #about #picture {
-  height: 500px;
+  width: 30%;
 }
 #about #picture img {
   width: 100%;
-  height: inherit;
 }
 #about #text {
   width: 45%;
@@ -105,7 +111,7 @@ header nav a {
 }
 
 #service {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #service hr {
   border: 1px solid black;
@@ -116,7 +122,7 @@ header nav a {
   padding: 0px 20px 20px 20px;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #service #container-skills .box {
   width: 20%;
@@ -137,6 +143,7 @@ header nav a {
 }
 
 #projects {
+  margin-top: 100px;
   height: 100%;
 }
 #projects hr {
@@ -147,22 +154,26 @@ header nav a {
 #projects #projects-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 #projects #projects-container .project {
-  height: 250px;
+  width: 47%;
 }
 #projects #projects-container .project img {
   border: 1px solid black;
-  height: 100%;
+  width: 100%;
 }
 
+#contact {
+  margin-top: 100px;
+}
 #contact hr {
   border: 1px solid black;
   width: 30%;
   margin: 0px auto;
 }
 #contact form {
+  margin-top: 100px;
   width: 50vw;
   margin: 8vh auto 0vh auto;
   padding-bottom: 8vh;

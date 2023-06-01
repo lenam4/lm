@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+a {
+  color: #253430;
+}
+
 .cleaner {
   clear: both;
 }
@@ -44,7 +48,10 @@ header nav li {
 }
 header nav a {
   display: block;
-  color: rgb(37, 52, 48);
+  color: #253430;
+}
+header nav a:hover {
+  color: #339989;
 }
 
 #bg-image {
@@ -94,7 +101,7 @@ header nav a {
   margin-top: 50px;
 }
 #about #picture {
-  width: 30%;
+  width: 24%;
 }
 #about #picture img {
   width: 100%;
@@ -158,6 +165,23 @@ header nav a {
 }
 #projects #projects-container .project {
   width: 47%;
+  position: relative;
+}
+#projects #projects-container .project .project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+#projects #projects-container .project:hover .project-text {
+  opacity: 1;
+}
+#projects #projects-container .project:hover img {
+  opacity: 40%;
+  transition: opacity 0.5s ease-in-out;
 }
 #projects #projects-container .project img {
   border: 1px solid black;
@@ -185,7 +209,11 @@ header nav a {
   justify-content: space-between;
   margin-top: 20px;
 }
-#contact form .form-row .form-box {
+#contact form .form-row .form-box2 {
+  width: 30% !important;
+  margin: 0px auto;
+}
+#contact form .form-row .form-box, #contact form .form-row .form-box2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -193,7 +221,7 @@ header nav a {
   padding: 0 25px;
   margin-bottom: 16px;
 }
-#contact form .form-row .form-box input {
+#contact form .form-row .form-box input, #contact form .form-row .form-box2 input {
   font-size: 1.3rem;
   width: 100%;
   background-color: transparent;
@@ -202,7 +230,7 @@ header nav a {
   border-bottom: 3px solid #339989;
   color: black;
 }
-#contact form .form-row .form-box textarea {
+#contact form .form-row .form-box textarea, #contact form .form-row .form-box2 textarea {
   font-size: 1rem;
   width: 100%;
   background-color: transparent;

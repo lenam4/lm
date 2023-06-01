@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 $grey:#63836b40;
 $green:#253430;
+$blue:#339989;
+$light-white:aliceblue;
 @mixin flex-c{
     display:flex;
     align-items: center;
@@ -17,6 +20,7 @@ $green:#253430;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     color:$green;
@@ -31,8 +35,11 @@ a{
 .wrap-flex{
     flex-wrap: wrap;
 }
+.text-color{
+    color:$green;
+}
 span{
-    color:#339989;
+    color:$blue;
 }
 header{
    z-index:1;
@@ -54,9 +61,9 @@ header{
         }
         a{
             display:block;
-            color:#253430;
+            color:$green;
             &:hover{
-                color: #339989;
+                color: $blue;
             }
         }
    } 
@@ -72,12 +79,7 @@ header{
 #naslov{
         width:83%;
         font-size: 20px;
-        color:aliceblue;
-
-            .text-color{
-                color:rgb(29 36 34);
-            }
-
+        color:$light-white;
             h1{
                 padding-bottom:2%;
             }
@@ -88,10 +90,9 @@ header{
     }
 }
 .heading{
-    
 h2{
     font-size:40px;
-    color: rgb(29 36 34);
+    color: $green;
     justify-content: center;
     text-align: center;
 }
@@ -136,11 +137,11 @@ hr{
     justify-content: space-around;
     margin-top: 100px;
     .box{
-        width:20%;
+        width:23%;
         text-align: center;
         justify-content: center;
-        background-color: #63836b40;
-        padding:10px;
+        background-color: $grey;
+        padding:13px 10px;
     .icon{
         font-size: 50px;
     }
@@ -174,14 +175,13 @@ hr{
             transform:translate(-50%, -50%);
             opacity:0;
             transform: opacity 0.5s ease-in-out;
-            text-align:center;
-          
+            text-align:center;    
         }
         &:hover .project-text{
             opacity:1;
         }
         &:hover img{
-            opacity:40%;
+            opacity:0.1;
             transition:opacity 0.5s ease-in-out;
         }
         img{
@@ -228,7 +228,7 @@ hr{
 			background-color: transparent;
 			outline: none;
 			border: none;
-			border-bottom: 3px solid #339989;
+			border-bottom: 3px solid $blue;
 			color: black;
             }
             textarea{
@@ -237,7 +237,7 @@ hr{
 			background-color: transparent;
 			outline: none;
 			border: none;
-			border-bottom: 3px solid #339989;
+			border-bottom: 3px solid $blue;
 			color: black;
             resize: none;
              }
@@ -246,11 +246,19 @@ hr{
     }
 }
 footer{
-    background-color: #63836b40;
+    background-color: $grey;
     #futer-information{
         margin: 0px auto;
         padding:30px;
         text-align: center;
-        font-size: 20px;
+        font-size: 23px;
+        p{
+            padding:2px;
+        }
+        a{
+            &:hover{
+                color:$blue;
+            }
+        }
     }
 }

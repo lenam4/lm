@@ -211,6 +211,9 @@ hr{
                 width: 30% !important;
                 @extend .form-box;
                 margin: 0px auto;
+              #submit{
+                cursor: pointer;
+              }
             }
             .form-box{
             display: flex;

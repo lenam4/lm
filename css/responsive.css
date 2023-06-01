@@ -52,4 +52,7 @@
   #contact form {
     width: 100%;
   }
+  #contact form .form-row .form-box, #contact form .form-row .form-box2 {
+    padding: 0 12px;
+  }
 }/*# sourceMappingURL=responsive.css.map */

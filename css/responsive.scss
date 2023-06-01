@@ -56,11 +56,13 @@ form{
 }
 }
 @media screen and (max-width: 465px) {
+   nav{
+    font-size: 12px;
+   }
     #service{
         #container-skills{
         .box{
-        width:80%;
-       
+        width:80%;      
 }
 }
 }
